@@ -46,13 +46,15 @@ function getWeather(lat, lon) {
   return temp;
 }
 //체감온도,습도,풍속,흐림
-function getWeather(feels_like, humidity, speed) {
+function getWeather(feels_like, humidity, speed, description) {
   var urlAPI =
     "https://api.openweathermap.org/data/2.5/weather?appid=f3ea4e686e26d655625baab1f8541271&units=metric&lang=kr";
 
   urlAPI += "&feels_like=" + feels_like;
   urlAPI += "&humidity=" + humidity;
   urlAPI += "&speed=" + speed;
+  urlAPI += "&description=" + description;
+
   var temp = {};
 
   $.ajax({
@@ -64,10 +66,12 @@ function getWeather(feels_like, humidity, speed) {
       const feels_like = data.main.feels_like.toFixed(0);
       const humidity = data.main.humidity.toFixed(0);
       const speed = data.wind.speed.toFixed(0);
+      const description = data.weather[0].description;
 
       temp.feels_like = feels_like;
       temp.humidity = humidity;
       temp.speed = speed;
+      temp.description = description;
     },
     error: function (request, status, error) {
       console.log("code:" + request.status);
@@ -97,17 +101,23 @@ function getCityWeather(q) {
       const feels_like = data.main.feels_like.toFixed(0);
       const humidity = data.main.humidity.toFixed(0);
       const speed = data.wind.speed.toFixed(0);
+      const description = data.weather[0].description;
 
       temp.celsius = celsius;
       temp.icon = icon;
       temp.feels_like = feels_like;
       temp.humidity = humidity;
       temp.speed = speed;
+      temp.description = description;
+
+      var iconurl = "https://openweathermap.org/img/wn/" + temp.icon + ".png";
 
       $(".card-text1").text(`현재온도: ${celsius}℃`);
       $(".card-text2").text(`체감온도: ${feels_like}℃`);
       $(".card-text3").text(`습도: ${humidity}%`);
       $(".card-text4").text(`풍속: ${speed}m/s`);
+      $(".region-icon2").attr("src", iconurl);
+      $(".card-text5").text(`날씨: ${description}`);
 
       $("");
     },
