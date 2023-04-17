@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./css/login.css" />
+    <!-- 부트스트랩 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="wrap">
+      <header>
+        <div class="naver_logo"><h1>NAVER</h1></div>
+      </header>
+      <main class="container">
+        <section>
+          <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-6">
+              <div class="col-12">
+                <label for="inputid" class="form-label">아이디</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="inputid"
+                  placeholder="@naver.com"
+                  maxlength="20"
+                />
+              </div>
+              <div class="col-12">
+                <label for="inputPassword3" class="form-label">비밀번호</label>
+                <input
+                  type="password"
+                  class="form-control"
+                  id="inputPassword3"
+                  maxlength="20"
+                />
+              </div>
+              <div class="col-12">
+                <label for="inputPassword4" class="form-label"
+                  >비밀번호 재확인</label
+                >
+                <input
+                  type="password"
+                  class="form-control"
+                  id="inputPassword4"
+                  maxlength="20"
+                />
+              </div>
+              <div class="col-12">
+                <label for="inputname" class="form-label">이름</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="inputname"
+                  maxlength="10"
+                />
+              </div>
+              <form class="row g-3">
+                <div class="col-md-4">
+                  <label for="year" class="form-label">생년월일</label>
+                  <span>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="inputyear"
+                      placeholder="년(4자)"
+                      maxlength="4"
+                    />
+                  </span>
+                </div>
+                <div class="col-md-4 day2">
+                  <select id="inputmonth" class="form-select">
+                    <option selected>월</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                  </select>
+                </div>
+                <div class="col-md-4 day2">
+                  <input type="text" class="form-control" id="inputday" />
+                </div>
+              </form>
+              <label for="gender" class="form-label">성별</label>
+              <select id="inputgender" class="form-select">
+                <option selected>성별</option>
+                <option>남자</option>
+                <option>여자</option>
+                <option>선택안함</option>
+              </select>
+              <div class="col-12">
+                <label for="inputname" class="form-label"
+                  >본인 확인 이메일(선택)</label
+                >
+                <input
+                  type="email"
+                  class="form-control"
+                  id="inputname"
+                  maxlength="40"
+                />
+              </div>
+              <div>
+                <label for="inputState" class="form-label">휴대전화</label>
+                <select id="inputState" class="form-select">
+                  <option selected>대한민국 + 82</option>
+                  <option>...</option>
+                </select>
+                <div class="row g-3">
+                  <div class="col-sm-9">
+                    <label></label>
+                    <input
+                      id="inputtel"
+                      type="text"
+                      class="form-control"
+                      maxlength="15"
+                      placeholder="전화번호입력해주세요"
+                    />
+                  </div>
+                  <div class="col-sm-3">
+                    <label></label>
+                    <input
+                      type="button"
+                      class="form-control"
+                      value="인증번호받기"
+                    />
+                  </div>
+                </div>
+                <div class="col-12">
+                  <label for="inputname" class="form-label"></label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="inputname"
+                    maxlength="15"
+                    placeholder="인증번호를 입력하세요"
+                  />
+                </div>
+                <div class="container">
+                  <button type="button" class="btn btn-success login">
+                    가입하기
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3"></div>
+        </section>
+      </main>
+      <footer>
+        <div>
+          이용약관 개인정보처리방침 책임의 한계와 법적고지 회원정보 고객센터<br />
+          naver Copyright NAVER Corp. All Rights Reserved.
+        </div>
+      </footer>
+    </div>
+
+    <!-- 제이쿼리 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="./js/login.js"></script>
+  </body>
+</html>
