@@ -9,3 +9,7 @@ main > section {
 #map {
   height: 500px !important;
 }
+
+.wrap {
+  text-decoration: none !important;
+}
