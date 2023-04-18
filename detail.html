@@ -24,14 +24,14 @@
 
       console.log(id);
 
-      const movieAPI = `https://api.themoviedb.org/3/movie/${id}?api_key=38dd880c562e1f720e47f2b4a33ce753&language=ko-KR`;
+      const movieURL = `https://api.themoviedb.org/3/movie/${id}?api_key=38dd880c562e1f720e47f2b4a33ce753&language=ko-KR`;
       $.ajax({
         type: "GET",
         url: movieURL,
         dataType: "json",
         async: false,
         success: function (data) {
-          console.log("전체data", data);
+          console.log("전체 data:", data);
         },
         error: function (request, status, error) {
           console.log("code:" + request.status);
