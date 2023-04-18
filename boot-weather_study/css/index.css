@@ -10,6 +10,6 @@ main > section {
   height: 500px !important;
 }
 
-.wrap {
+.wrap a {
   text-decoration: none !important;
 }
