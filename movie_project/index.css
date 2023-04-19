@@ -1,10 +1,34 @@
 @charset "utf-8";
 
 .wrap {
-  margin: 0 auto;
+  margin: 0 auto !important;
 }
 
 .poster {
-  width: 100%;
   height: 350px;
+}
+
+.maincard {
+  height: 350px !important;
+  margin: 0 auto !important;
+  border: 0 solid white !important;
+}
+
+.card-title {
+  font-weight: bold;
+}
+
+.card-text1 {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.card-body > p {
+  font-weight: bold;
+}
+
+.card-body2 p {
+  font-weight: bold !important;
+  line-height: 40px;
+  margin-top: 150px !important;
 }
