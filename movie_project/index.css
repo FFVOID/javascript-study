@@ -117,10 +117,19 @@ h2 {
 .director {
   display: flex;
   margin-top: 20px !important;
+  width: 1000px !important;
+  justify-content: center !important;
+  margin: 0 auto !important;
 }
 
 .col {
   width: 250px !important;
-  margin: 0 auto !important;
-  justify-content: center !important;
+}
+
+.col img {
+  border-radius: 10px;
+}
+
+.col h5 {
+  text-align: center;
 }
