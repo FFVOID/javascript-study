@@ -34,12 +34,12 @@ $.ajax({
     );
     $(".poster img ").height(350);
     $(".poster img ").css("border-radius", "10px");
-    $(".card-title").text(`${title}`);
-    $(".card-text1").text(`${original_title}`);
-    $(".card-text2").text(`장르   ${genres}/${genres1}/${genres2}`);
-    $(".card-text3").text(`개봉날짜 ${release_date}`);
-    $(".card-text4").text(`러닝타임 ${runtime}분`);
-    $(".card-text6").text(`평점 ${vote_average}`);
+    $(".info_title").text(`${title}`);
+    $(".info_text1").text(`${original_title}`);
+    $(".info_text2").text(`장르   ${genres}/${genres1}/${genres2}`);
+    $(".info_text3").text(`개봉날짜 ${release_date}`);
+    $(".info_text4").text(`러닝타임 ${runtime}분`);
+    $(".info_text5").text(`평점 ${vote_average}`);
   },
   error: function (request, status, error) {
     console.log("code:" + request.status);
