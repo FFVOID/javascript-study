@@ -12,6 +12,7 @@
   height: 350px !important;
   margin: 0 auto !important;
   border: 0 solid white !important;
+  width: 1100px !important;
 }
 
 .card-title {
@@ -31,4 +32,95 @@
   font-weight: bold !important;
   line-height: 40px;
   margin-top: 150px !important;
+}
+
+.story {
+  width: 1100px;
+  margin: 0 auto;
+  border-top: 1px solid rgb(230, 227, 227);
+  border-bottom: 1px solid rgb(236, 235, 235);
+  height: 200px;
+}
+
+.story2 {
+  width: 900px;
+  margin: 0 auto;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.cards2 {
+  margin: 0 auto !important;
+}
+
+.actor {
+  display: flex !important;
+  justify-content: center !important;
+  height: 350px;
+}
+
+.actor1 {
+  border: 1px solid gainsboro;
+
+  width: 202px !important;
+  margin: 0 20px !important;
+}
+
+.actor2 {
+  border: 1px solid gainsboro;
+
+  width: 202px !important;
+  margin: 0 20px !important;
+}
+.actor3 {
+  border: 1px solid gainsboro;
+
+  width: 202px !important;
+  margin: 0 20px !important;
+}
+.actor4 {
+  border: 1px solid gainsboro;
+
+  width: 202px !important;
+  margin: 0 20px !important;
+}
+
+.story2 {
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+  margin: 20px 0 !important;
+}
+
+.actor1-body > p {
+  text-align: center;
+  margin: 0 !important;
+}
+
+.actor2-body > p {
+  text-align: center;
+  margin: 0 !important;
+}
+
+.actor3-body > p {
+  text-align: center;
+  margin: 0 !important;
+}
+
+.actor4-body > p {
+  text-align: center;
+  margin: 0 !important;
+}
+
+.director {
+  display: flex;
+  margin-top: 20px !important;
+}
+
+.col {
+  width: 250px !important;
+  margin: 0 auto !important;
+  justify-content: center !important;
 }
