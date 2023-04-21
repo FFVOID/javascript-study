@@ -12,6 +12,11 @@
   border: 0 solid gray !important;
 }
 
+.main_view_title {
+  font-weight: bold;
+  text-align: left;
+}
+
 .main_view_info {
   margin: 0 auto;
 }
