@@ -36,6 +36,7 @@ $.ajax({
       `<a href="./index.html?id=${data.id}"><img src="${imgURL}"></a>`
     );
     $(".poster img ").height(400);
+
     $(".poster img ").css("border-radius", "10px");
     $(".main_view_title").text(`${title}`);
     $(".info_text1").text(`${original_title}`);
