@@ -30,7 +30,7 @@ $.ajax({
     const revenue = data.revenue;
     console.log(revenue);
 
-    let imgURL = "https://image.tmdb.org/t/p/w500" + data.poster_path;
+    let imgURL = "https://image.tmdb.org/t/p/original" + data.poster_path;
 
     $(".poster").append(
       `<a href="./index.html?id=${data.id}"><img src="${imgURL}"></a>`
