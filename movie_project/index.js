@@ -30,6 +30,9 @@ $.ajax({
     const revenue = data.revenue;
     console.log(revenue);
 
+    const tagline = data.tagline;
+    console.log(tagline);
+
     let imgURL = "https://image.tmdb.org/t/p/original" + data.poster_path;
 
     $(".poster").append(
@@ -40,11 +43,12 @@ $.ajax({
     $(".poster img ").css("border-radius", "10px");
     $(".main_view_title").text(`${title}`);
     $(".info_text1").text(`${original_title}`);
-    $(".info_text2").text(`장르   ${genres} / ${genres1} / ${genres2}`);
-    $(".info_text3").text(`개봉날짜 ${release_date}`);
-    $(".info_text4").text(`러닝타임 ${runtime}분`);
-    $(".info_text5").text(`평점 ${vote_average}`);
-    $(".info_text6").text(`수익 $${revenue}`);
+    $(".info_text2").text(`${tagline}`);
+    $(".info_text3").text(`장르 ${genres} / ${genres1} / ${genres2}`);
+    $(".info_text4").text(`개봉날짜 ${release_date}`);
+    $(".info_text5").text(`러닝타임 ${runtime}분`);
+    $(".info_text6").text(`평점 ${vote_average}`);
+    $(".info_text7").text(`수익 $${revenue}`);
   },
   error: function (request, status, error) {
     console.log("code:" + request.status);
