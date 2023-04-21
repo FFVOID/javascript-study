@@ -27,19 +27,23 @@ $.ajax({
     const vote_average = data.vote_average.toFixed(1);
     console.log(`평점${vote_average}`);
 
+    const revenue = data.revenue;
+    console.log(revenue);
+
     let imgURL = "https://image.tmdb.org/t/p/w500" + data.poster_path;
 
     $(".poster").append(
       `<a href="./index.html?id=${data.id}"><img src="${imgURL}"></a>`
     );
-    $(".poster img ").height(350);
+    $(".poster img ").height(400);
     $(".poster img ").css("border-radius", "10px");
-    $(".info_title").text(`${title}`);
+    $(".main_view_title").text(`${title}`);
     $(".info_text1").text(`${original_title}`);
     $(".info_text2").text(`장르   ${genres}/${genres1}/${genres2}`);
     $(".info_text3").text(`개봉날짜 ${release_date}`);
     $(".info_text4").text(`러닝타임 ${runtime}분`);
     $(".info_text5").text(`평점 ${vote_average}`);
+    $(".info_text6").text(`수익 $${revenue}`);
   },
   error: function (request, status, error) {
     console.log("code:" + request.status);
@@ -84,10 +88,10 @@ $.ajax({
     $(".actor4-text1").text(`${actor4}`);
     $(".actor4-text2").text(`(${character4})`);
 
-    let imgURL2 = "https://image.tmdb.org/t/p/w200" + data.cast[0].profile_path;
-    let imgURL3 = "https://image.tmdb.org/t/p/w200" + data.cast[1].profile_path;
-    let imgURL4 = "https://image.tmdb.org/t/p/w200" + data.cast[2].profile_path;
-    let imgURL5 = "https://image.tmdb.org/t/p/w200" + data.cast[3].profile_path;
+    let imgURL2 = "https://image.tmdb.org/t/p/w300" + data.cast[0].profile_path;
+    let imgURL3 = "https://image.tmdb.org/t/p/w300" + data.cast[1].profile_path;
+    let imgURL4 = "https://image.tmdb.org/t/p/w300" + data.cast[2].profile_path;
+    let imgURL5 = "https://image.tmdb.org/t/p/w300" + data.cast[3].profile_path;
 
     $(".actor1-img").append(
       `<a href="./index.html?id=${data.id}"><img src="${imgURL2}"></a>`
