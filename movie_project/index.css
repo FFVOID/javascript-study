@@ -5,11 +5,10 @@
 }
 
 .main_view {
-  /* width: 1100px; */
-  /* height: 370px; */
   height: 100%;
   margin: 0 auto;
   border: 0 solid gray !important;
+  padding-bottom: 10px;
 }
 
 .main_view_title {
@@ -35,20 +34,19 @@
 
 .main_view_body2 {
   height: 400px;
+  padding-top: 30px !important;
 }
 
 .main_view_body3 {
-  padding-left: 16px !important;
   width: 400px !important;
   display: flex;
   flex-direction: column;
   justify-content: center;
   font-weight: bold;
+  margin: 70px 0 0 0 !important;
+  padding-left: 16px !important;
 }
 
-.main_view_body3 > p:nth-child(1) {
-  margin-top: 30px;
-}
 .info {
   /* width: 400px; */
   padding: 25px;
@@ -69,6 +67,7 @@
   font-weight: bold;
   font-style: italic;
   margin-bottom: 15px;
+  font-size: 18px;
 }
 
 .info_text3 {
@@ -112,6 +111,14 @@
   padding-bottom: 30px;
 }
 
+.story2_title {
+  margin-bottom: 0;
+}
+
+.story2_main {
+  padding-top: 10px;
+}
+
 .cards2 {
   margin: 0 auto !important;
 }
@@ -132,6 +139,7 @@
   /* width: 1100px !important; */
   margin: 0 auto !important;
   padding-bottom: 15px !important;
+  background-color: aqua;
 }
 
 .col {
@@ -191,15 +199,18 @@
 
 .story2_title {
   text-align: center;
+  font-weight: bold;
 }
 
 .story2_main {
   text-align: center;
+  font-weight: 700;
 }
 
 h2 {
   text-align: center;
   padding-top: 20px !important;
+  font-weight: bold !important;
 }
 
 .actor1-body > p {
@@ -232,6 +243,9 @@ h2 {
 
   /* width: 1100px !important; */
   justify-content: center !important;
+
+  margin: 0 auto !important;
+  background-color: aqua;
 }
 
 .card3_main {
