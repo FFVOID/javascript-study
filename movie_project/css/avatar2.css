@@ -65,6 +65,7 @@ header {
 
 .main_view_body {
   width: 400px !important;
+  padding-left: 16px !important;
 }
 
 .main_view_body2 {
@@ -78,7 +79,7 @@ header {
   flex-direction: column;
   justify-content: center;
   font-weight: bold;
-
+  margin-top: 70px !important;
   padding-left: 16px !important;
 }
 
@@ -219,7 +220,7 @@ header {
 .actor2-img img {
   border-radius: 10px 10px 0 0;
   height: 300px;
-  width: 200px;
+  width: 199px;
 }
 
 .actor3-img img {
