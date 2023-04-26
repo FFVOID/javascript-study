@@ -1,7 +1,6 @@
 @charset "utf-8";
 
 * {
-  padding: 0 !important;
   list-style: none;
 }
 
@@ -80,7 +79,7 @@ header {
   justify-content: center;
   font-weight: bold;
   margin-top: 70px !important;
-  padding-left: 16px !important;
+  padding-left: 32px !important;
 }
 
 .info {
