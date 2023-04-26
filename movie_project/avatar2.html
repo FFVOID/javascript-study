@@ -108,7 +108,7 @@
                 </div>
                 <div class="col">
                   <div class="card3 actor2">
-                    <div class="actor2-img"></div>
+                    <div class="actor2-img" alt="Zoe Saldaña"></div>
                     <div class="card-body actor2-body">
                       <p class="actor2-text1"></p>
                       <p class="actor2-text2"></p>
@@ -117,7 +117,7 @@
                 </div>
                 <div class="col">
                   <div class="card3 actor3">
-                    <div class="actor3-img"></div>
+                    <div class="actor3-img" alt="Sigourney Weaver"></div>
                     <div class="card-body actor3-body">
                       <p class="actor3-text1"></p>
                       <p class="actor3-text2"></p>
@@ -126,7 +126,7 @@
                 </div>
                 <div class="col">
                   <div class="card3 actor4">
-                    <div class="actor4-img"></div>
+                    <div class="actor4-img" alt="Stephen Lang"></div>
                     <div class="card-body actor4-body">
                       <p class="actor4-text1"></p>
                       <p class="actor4-text2"></p>
@@ -206,16 +206,23 @@
             </span>
           </div>
           <div class="familysite col-md-3">
-            <select class="site-select" onchange="window.open(value,'_blank');">
-              <option selected disabled>사이트바로가기</option>
-              <option
-                value="https://www.kobis.or.kr/kobisopenapi/homepg/main/main.do"
+            <label for="site-select2">
+              <select
+                class="site-select"
+                onchange="window.open(value,'_blank');"
               >
-                영화진흥위원회
-              </option>
-              <option value="https://www.cgv.co.kr/">CGV 예매사이트</option>
-              <option value="https://www.themoviedb.org/">The Movie DB</option>
-            </select>
+                <option selected disabled>사이트바로가기</option>
+                <option
+                  value="https://www.kobis.or.kr/kobisopenapi/homepg/main/main.do"
+                >
+                  영화진흥위원회
+                </option>
+                <option value="https://www.cgv.co.kr/">CGV 예매사이트</option>
+                <option value="https://www.themoviedb.org/">
+                  The Movie DB
+                </option>
+              </select>
+            </label>
           </div>
         </section>
       </footer>

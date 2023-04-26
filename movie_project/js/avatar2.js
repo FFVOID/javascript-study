@@ -36,7 +36,7 @@ $.ajax({
     let imgURL = "https://image.tmdb.org/t/p/original" + data.poster_path;
 
     $(".poster").append(
-      `<a href="./index.html?id=${data.id}"><img src="${imgURL}"></a>`
+      `<a href="./index.html?id=${data.id}"><img src="${imgURL}" alt="poster"></a>`
     );
     $(".poster img ").height(400);
 
@@ -99,17 +99,17 @@ $.ajax({
     let imgURL5 = "https://image.tmdb.org/t/p/w300" + data.cast[3].profile_path;
 
     $(".actor1-img").append(
-      `<a href="./index.html?id=${data.id}"><img src="${imgURL2}"></a>`
+      `<a href="./index.html?id=${data.id}"><img src="${imgURL2}" alt="Sam Worthington"></a>`
     );
 
     $(".actor2-img").append(
-      `<a href="./index.html?id=${data.id}"><img src="${imgURL3}"></a>`
+      `<a href="./index.html?id=${data.id}"><img src="${imgURL3}" alt="Zoe Saldaña"></a>`
     );
     $(".actor3-img").append(
-      `<a href="./index.html?id=${data.id}"><img src="${imgURL4}"></a>`
+      `<a href="./index.html?id=${data.id}"><img src="${imgURL4}" alt="Sigourney Weaver"></a>`
     );
     $(".actor4-img").append(
-      `<a href="./index.html?id=${data.id}"><img src="${imgURL5}"></a>`
+      `<a href="./index.html?id=${data.id}"><img src="${imgURL5}" alt="Sigourney Weaver"></a>`
     );
   },
   error: function (request, status, error) {
