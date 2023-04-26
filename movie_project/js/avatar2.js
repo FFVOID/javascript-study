@@ -76,11 +76,6 @@ $.ajax({
     const character3 = data.cast[2].character;
     const character4 = data.cast[3].character;
 
-    console.log(character1);
-    console.log(character2);
-    console.log(character3);
-    console.log(character4);
-
     $(".actor1-text1").text(`${actor1}`);
     $(".actor1-text2").text(`(${character1})`);
 

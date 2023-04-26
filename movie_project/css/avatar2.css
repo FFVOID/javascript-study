@@ -34,6 +34,8 @@ header {
   width: 80% !important;
 }
 
+/* 메인 */
+
 .wrap {
   margin: 0 auto !important;
 }
@@ -359,7 +361,7 @@ footer {
 }
 
 .familysite select {
-  width: 100%;
+  width: 60%;
   font-size: 14px;
   background-color: #000;
   color: #fff;
